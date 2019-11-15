@@ -22,7 +22,7 @@ pipeline {
                 }
             }
         }
-        stage("mvn clean install ") {
+        stage("mvn clean install 11") {
             steps {
                 script {
                     // If you are using Windows then you should use "bat" step
