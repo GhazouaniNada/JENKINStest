@@ -43,6 +43,15 @@ pipeline {
      
         
         
+                stage("mail") {
+          steps {
+          mail bcc: '', body: 'testtttttttttttttttttttt', cc: '', from: '', replyTo: '', subject: 'HELOOO from JENKINS', 
+              to: 'ghazouaninada02@gmail.com' 
+            
+          }
+        
+        
+        
            
          stage("mvn deploy") {
             steps {
@@ -53,11 +62,7 @@ pipeline {
                 }
             }
         }
-        stage("mail") {
-          steps {
-          mail bcc: '', body: '''Hello User the build of your project successed.
-            Jenkins.''', cc: '', from: '', replyTo: '', subject: 'Build succed', to: 'ghazouaninada02@gmail.com'
-          }
+
         
         }
         
