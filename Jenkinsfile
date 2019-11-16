@@ -50,7 +50,7 @@ pipeline {
             
           }
         
-        
+        }
         
            
          stage("mvn deploy") {
@@ -64,7 +64,7 @@ pipeline {
         }
 
         
-        }
+        
         
         
        
